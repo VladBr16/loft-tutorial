@@ -144,6 +144,10 @@ a:hover {
   font-weight: 700;
 }
 
+.none {
+  display: none;
+}
+
 /*стили страницы */
 .header {
   display: flex;
@@ -159,6 +163,21 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 999px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .header__nav-btn {
+    display: block;
+  }
 }
 
 .header__title {
@@ -220,6 +239,18 @@ a:hover {
 
 .benefits {
   padding: 120px 0;
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0);
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .benefits__row {
@@ -241,6 +272,22 @@ a:hover {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.35;
+}
+
+.apartaments {
+  position: relative;
+}
+.apartaments::before {
+  content: "III";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0);
+  line-height: 1.15;
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .apartaments__title {
@@ -378,6 +425,19 @@ a:hover {
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0);
+  line-height: 1.15;
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .video__link {
@@ -414,6 +474,20 @@ a:hover {
 
 .section-map {
   padding: 180px 0;
+  position: relative;
+}
+.section-map::before {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  top: 150px;
 }
 
 .section-map__title {

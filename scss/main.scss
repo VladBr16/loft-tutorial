@@ -2,7 +2,7 @@
 @import './base/reset';
 @import './base/vars'; /*переменные */
 @import './base/base'; /*стили страницы */
-
+@import './base/mixin';
 // blocks scss
 
 @import './blocks/header';

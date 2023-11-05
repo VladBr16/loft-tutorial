@@ -1,4 +1,14 @@
 .apartaments{
+  position: relative;
+
+  &::before{
+    content: "III";
+    right: calc(50% + 555px);
+    transform: translate(+50%, 0);
+    line-height: 1.15;
+
+    @include decorNumber;
+  }
 
 }
 

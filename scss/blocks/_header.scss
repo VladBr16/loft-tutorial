@@ -21,6 +21,20 @@
       align-items: center;
   }
 
+  .header__nav{
+    @include mediaTablet{
+      display: none;
+    };
+  }
+
+  .header__nav-btn{
+    display: none;
+
+    @include mediatablet{
+      display: block;
+    }
+  }
+
   .header__title{
     position: relative;
 
@@ -40,3 +54,4 @@
     transform: translate(-50%, 0%);
 
   }
+
